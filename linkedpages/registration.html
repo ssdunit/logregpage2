@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/registration.css">
+    </head>
+    <body>
+        <div class="box">
+            <div class="registration">Registration</div>
+            <div class="container">
+                <div class="fullname">Full name<br>
+                <input type="text" id="fn" placeholder="Enter your name">
+                <br>
+                </div>
+                <div class="username">Username
+                    <input type="text" id="un" placeholder="Enter your username">
+                </div>
+            </div>
+            <div class="container">
+                <div class="email">Email<br>
+                <input type="text" id="en" placeholder="Enter your email">
+                <br>
+                </div>
+                <div class="Phonenumber">Phone number
+                    <input type="text" id="pn" placeholder="Enter your number">
+                </div>
+            </div>
+            <div class="container">
+                <div class="pass">Password<br>
+                <input type="password" id="p" placeholder="Enter your pass" maxlength="8">
+                <br>
+                </div>
+                <div class="confirmpass">Confirm your password
+                    <input type="password" id="cp" placeholder="Confirm your pass" maxlength="8">
+                </div>
+            </div>
+            <div class="showpassword">
+                <input type="checkbox" id='showpassword'>Show password
+            </div>
+            <br>
+            <br>
+            <div class="gender">Gender</div>
+            <div class="containernew">
+                <div class="male"><input type="radio" id="m" name="gender">Male</div>
+                <div class="female"><input type="radio" id="f" name="gender">Female</div>
+                <div class="others"><input type="radio" id="o" name="gender">Others</div>
+                
+            </div>
+            <div class="Register"><a href="../home.html"><button id="Register">Register</button></a></div>
+        </div>
+
+        <script>
+            const passwordField = document.getElementById('p');
+            const showPasswordCheckbox = document.getElementById('showpassword');
+
+            showPasswordCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        });
+        </script>
+    </body>
+</html>

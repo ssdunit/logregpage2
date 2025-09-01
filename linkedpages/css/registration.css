@@ -1,0 +1,336 @@
+@font-face {
+    font-family: a;
+    src: url(../fonts/Nunito-Black.ttf);
+}
+@font-face {
+    font-family: b;
+    src: url(../fonts/Nunito-Bold.ttf);
+}
+@font-face {
+    font-family: c;
+    src: url(../fonts/Nunito-LightItalic.ttf);
+}
+@font-face {
+    font-family: d;
+    src: url(../fonts/Nunito-Bold.ttf);
+}
+@font-face {
+    font-family: e;
+    src: url(../fonts/Nunito-SemiBold.ttf);
+}
+body {
+    background-image: url("../images/1.jpg");
+    background-size: 300%;
+    background-blend-mode: soft-light;
+    backdrop-filter: blur(5px);
+}
+.box {
+    background-color: rgba(255, 255, 255, 0.65);
+    margin: auto;
+    transform: translate(0,10%);
+    width: 450px;
+    height: 650px;
+    background-blend-mode:hue;
+    border-radius: 50px;
+    text-align: center;
+}
+.registration {
+    font-size: 40px;
+    padding-top: 5%;
+    font-family: a ;
+    padding-bottom:5px;
+    text-align: center;
+    height:50px;
+    text-decoration: underline 2px rgba(255, 255, 255,0.6);
+    text-underline-offset: 4px;
+    animation: reganim ease-in-out 2s 1 forwards;
+}
+@keyframes reganim {
+    0%{
+        text-decoration-color: purple;
+    }
+    10%{
+        text-decoration-color: rgba(255, 215, 0,0.6);
+    }
+    70%{
+        text-decoration-color: black;
+    }
+
+}
+#fn{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    align-self: flex-start;
+    width: 130px;
+    box-sizing: border-box;
+    border-width: 0 0 3px;
+    border-color: black;
+    outline: 0;
+    border-radius: 1px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.02);
+    transition: width 0.4s ease-in-out;
+}
+#fn:hover{
+   width: 160px;
+}
+#fn:focus{
+    width: 160px;
+ }
+::placeholder{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family:c;
+}
+.fullname{
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 15px;
+    font-family: b;
+    padding-bottom: 5px;
+}
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.username{
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 15px;
+    font-family: b;
+    padding-bottom: 5px;
+}
+#un{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    align-self: flex-start;
+    width: 140px;
+    box-sizing: border-box;
+    border-width: 0 0 3px;
+    border-color: black;
+    outline: 0;
+    border-radius: 1px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.02);
+    transition: width 0.4s ease-in-out;
+}
+#un:hover{
+   width: 160px;
+}
+#un:focus{
+    width: 160px;
+ }
+#en{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    align-self: flex-start;
+    width: 130px;
+    box-sizing: border-box;
+    border-width: 0 0 3px;
+    border-color: black;
+    outline: 0;
+    border-radius: 1px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.02);
+    transition: width 0.4s ease-in-out;
+}
+#en:hover{
+   width: 160px;
+}
+#en:focus{
+    width: 160px;
+ }
+.email{
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 15px;
+    font-family: b;
+    padding-bottom: 5px;
+}
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.phonenumber{
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 15px;
+    font-family: b;
+    padding-bottom: 5px;
+}
+#pn{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    align-self: flex-start;
+    width: 140px;
+    box-sizing: border-box;
+    border-width: 0 0 3px;
+    border-color: black;
+    outline: 0;
+    border-radius: 1px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.02);
+    transition: width 0.4s ease-in-out;
+}
+#pn:hover{
+   width: 160px;
+}
+#pn:focus{
+    width: 160px;
+}
+#p{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    align-self: flex-start;
+    width: 130px;
+    box-sizing: border-box;
+    border-width: 0 0 3px;
+    border-color: black;
+    outline: 0;
+    border-radius: 1px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.02);
+    transition: width 0.4s ease-in-out;
+}
+#p:hover{
+   width: 160px;
+}
+#p:focus{
+    width: 160px;
+ }
+.pass{
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 15px;
+    font-family: b;
+    padding-bottom: 5px;
+}
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.confirmpass{
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 15px;
+    font-family: b;
+    padding-bottom: 5px;
+}
+#cp{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    align-self: flex-start;
+    width: 140px;
+    box-sizing: border-box;
+    border-width: 0 0 3px;
+    border-color: black;
+    outline: 0;
+    border-radius: 1px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.02);
+    transition: width 0.4s ease-in-out;
+}
+#cp:hover{
+   width: 160px;
+}
+#cp:focus{
+    width: 160px;
+}
+.showpassword{
+    text-align: left;
+    padding-left: 25px;
+    font-size: 14px;
+    font-family: showpass;
+    padding-top: 10px;
+}
+#showpassword{
+    position: left;
+    vertical-align: -5px;
+    width: 15px;
+    height: 20px;
+    padding: 0;
+    top:-1px;
+    align-items: center;
+}
+.gender{
+    text-align: left;
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: a;
+}
+.containernew{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.male{
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size: 16px;
+    font-family: e;
+}
+#m{
+    align-items: center;
+    vertical-align: -2px;
+}
+.female{
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size: 16px;
+    font-family: e;
+}
+#f{
+    align-items: center;
+    vertical-align: -2px;
+}
+.others{
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size: 16px;
+    font-family: e;
+}
+#o{
+    align-items: center;
+    vertical-align: -2px;
+}
+.register{
+    padding-top: 30px;
+    margin: 0;
+}
+#register{
+    text-align: center;
+    height:45px;
+    padding-bottom: 5px;
+    width: 80%;
+    color: white;
+    border:none;
+    border-radius: 20px;
+    background: linear-gradient(115deg, rgba(252, 92, 125,0.9), rgba(106, 130, 251,0.8));
+    font-family: d;
+    font-size: 25px;
+    cursor:pointer;
+}
+#register:hover{
+    background-size: 400%;
+    animation: regibutt 2s ease-out 1;
+}
+@keyframes regibutt{
+    0%{
+        background-position: 269%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}

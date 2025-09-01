@@ -1,0 +1,288 @@
+@font-face {
+    font-family: login button;
+    src: url(../fonts/Crimson-Roman.otf);
+}
+@font-face {
+    font-family: insidein;
+    src: url(../fonts/Nunito-LightItalic.ttf);
+}
+@font-face {
+    font-family: BIGLOGIN;
+    src: url(../fonts/Nunito-ExtraBold.ttf);
+}
+@font-face {
+    font-family: forgetpass;
+    src: url(../fonts/Nunito-Black.ttf);
+}
+@font-face {
+    font-family: showpass;
+    src: url(../fonts/Nunito-Bold.ttf);
+}
+@font-face {
+    font-family: orsign;
+    src: url(../fonts/Crimson-SemiboldItalic.otf);
+}
+@font-face {
+    font-family: regemail;
+    src: url(../fonts/Nunito-Light.ttf);
+}
+body {
+    background-image: url("../images/1.jpg");
+    background-size: 300%;
+    background-blend-mode: soft-light;
+    backdrop-filter: blur(5px);
+}
+.box {
+    background-color: rgba(255, 255, 255, 0.65);
+    margin: auto;
+    transform: translate(0,10%);
+    width: 450px;
+    height: 650px;
+    background-blend-mode:hue;
+    border-radius: 50px;
+    text-align: center;
+
+}
+.boxlogin {
+    font-size: 40px;
+    padding-top: 5%;
+    font-family: BIGLOGIN;
+    padding-bottom:5px;
+    height:50px;
+}
+.email{
+    text-align: left;
+    padding-left: 45px;
+    padding-top: 30px;
+    font-size: 15px;
+    font-family: BIGLOGIN;
+    padding-bottom: 5px;
+}
+#email{
+
+    width: 50%;
+    height: 45px;
+    outline:0;
+    border-width: 0 0 3px;
+    border-color: black;
+    font-size:15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    transition: width 0.4s ease-in-out;
+    background-image: url(../images/username-icon-png-7.png);
+    background-position: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0);
+}
+#email:hover{
+   width: 80%;
+}
+#email:focus{
+    width: 80%;
+ }
+#email:not(:placeholder-shown){
+    width: 80%;
+}
+::placeholder{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family:insidein;
+}
+.password{
+    text-align: left;
+    padding-left: 45px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-family: BIGLOGIN;
+    
+}
+#password{
+
+    width: 50%;
+    height: 45px;
+    outline:0;
+    border-width: 0 0 3px;
+    border-color: black;
+    font-size:15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    transition: width 0.4s ease-in-out;
+    background-image: url(../images/Lock-Transparent-Images.png);
+    background-position: 5px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0);
+}
+#password:hover{
+    width:80%
+}
+#password:focus{
+    width: 80%;
+    background-image: url(../images/unlock-156.png);
+    background-position: 5px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+ }
+#password:not(:placeholder-shown){
+    width: 80%;
+}
+#showpassword{
+    position: left;
+    vertical-align: -5px;
+    width: 15px;
+    height: 20px;
+    padding: 0;
+    top:-1px;
+    align-items: center;
+}
+.showpassword{
+    text-align: left;
+    padding-left: 40px;
+    font-size: 13px;
+    font-family: showpass;
+}
+.forgetpassword{
+    text-align: right;
+    padding-right: 50px;
+    font-family:forgetpass;
+}
+#forgotpass{
+    text-decoration: none;
+    color: rgba(128, 0, 128,0.5);
+}
+.loginbutton{
+    padding-top: 30px;
+    margin: 0;
+    position: relative;
+}
+#loginbutton{
+    text-align: center;
+    height:45px;
+    padding-bottom: 5px;
+    width: 300px;
+    color: white;
+    border:none;
+    border-radius: 20px;
+    background: linear-gradient(115deg, rgb(252, 92, 125), rgb(106, 130, 251));
+    font-family: showpass;
+    font-size: 25px;
+}
+#loginbutton:hover{
+    background-size: 400%;
+    animation: loginbutt 2s ease-out 1;
+}
+@keyframes loginbutt{
+    0%{
+        background-position: 269%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+.signupscript{
+    padding-top: 30px;
+    font-family: orsign;
+    text-indent: 0.1px;
+    font-size: 18px;
+}
+.grp1{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+.cont1:hover{
+    background-image: conic-gradient(rgba(167, 163, 163, 0.9) var(--fill),transparent var(--fill));
+    border-radius: 2000px;
+    animation: load1 500ms linear 1;
+    --fill:100%;
+}
+.cont2:hover{
+    background-image: conic-gradient(rgba(167, 163, 163, 0.9) var(--fill),transparent var(--fill));
+    border-radius: 2000px;
+    animation: load1 500ms linear 1;
+    --fill:100%;
+}
+.cont2{
+    background-color: rgba(255, 255, 255,0.05) ;
+    border-radius: 2000px;
+}
+.cont2::after{
+    padding: 5px;
+    background-image: conic-gradient(red 20%,transparent 20%);
+}
+@keyframes load1{
+    from{
+        --fill:0%;
+    }
+    to{
+        --fill:100%;
+    }
+}
+
+#fb{
+    width: 40px;
+    height: 40px;
+}
+
+#gg{
+    width: 40px;
+    height: 40px;
+}
+.regemail{
+    width: 100%;
+    height: 50%;
+    margin:0;
+}
+#emphoto{
+    transform: translate(120%, 25%);
+}
+#register{
+    transform: translate(-5%);
+    margin:0;
+    text-align: right;
+    padding-right: 20px;
+    border:none;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 50%;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 20px;
+    font-family: regemail;
+}
+#register:hover{
+    background-color: rgba(255, 255, 255, 0.55);
+}
+#regemailanchor{
+    color: black;
+    text-decoration: none;
+}
+.card::after, .card::before{
+    position: absolute;
+    content:'';
+    height:48px;
+    top:70%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 305px;
+    background-image: conic-gradient(from 0deg, transparent 75%, rgb(0, 0, 255));
+    border:none;
+    padding-top: 4px;
+    padding-left: 10px;
+    border-radius: 25px;
+    z-index: -1;
+}
+.card::before{
+    filter: blur(1.5rem);
+}
+@property --fill{
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
