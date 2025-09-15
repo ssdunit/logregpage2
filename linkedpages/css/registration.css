@@ -338,37 +338,6 @@ body {
 }
 */
 
-/* new register button */
-#register{
-    display: inline-flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height:45px;
-    width: 300px;
-    color: white;
-    border:none;
-    border-radius: 40px;
-    background-color: black;
-    font-family: monospace;
-    font-size: 25px;
-}
-#register:hover::before,#register:hover::after{
-    content:'';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 47px;
-    padding: 7px; 
-    cursor: pointer; 
-    background-image: conic-gradient(from var(--angle), #662D8C , #ED1E79 , #662D8C);
-    z-index: -1;
-    animation: rotate 5s linear infinite;
-}
-#register:hover::after{
-    padding: 20px;
-    filter: blur(1rem);
-}
 /* new register button animation */
 @keyframes rotate {
     from{
@@ -377,4 +346,50 @@ body {
     to{
         --angle:360deg;
     }
+}
+
+/* new register button */
+#register{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height:60px;
+    width: 150px;
+    color: black;
+    border:none;
+    border-radius: 40px;
+    background-image: linear-gradient(to bottom right,rgb(223,223,223),rgb(142,142,142));
+    font-family: monospace;
+    font-size: 20px;
+}
+#register:hover::before,#register:hover::after{
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 45px;
+    padding: 5px; 
+    cursor: pointer; 
+    background-image: conic-gradient(from var(--angle), #662D8C , #ED1E79 , #662D8C);
+    z-index: -1;
+    animation: rotate 5s linear infinite;
+}
+#register:hover::after{
+    padding: 7px;
+    filter: blur(1.5rem);
+}
+#key{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 70%;
+    width: 95%;
+    background-image: linear-gradient( to top left, rgb(255, 255, 255) 10%,rgb(156, 157, 157) 80%);
+}
+@property --angle{
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
 }
