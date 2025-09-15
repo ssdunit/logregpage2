@@ -38,7 +38,7 @@ body {
     transform: translate(0,10%);
     backdrop-filter: blur(100%);
     width: 450px;
-    height: 650px;
+    height: 700px;
     border-radius: 50px;
     text-align: center;
 }
