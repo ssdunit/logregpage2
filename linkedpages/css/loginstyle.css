@@ -36,12 +36,11 @@ body {
     background-color: rgba(255, 255, 255, 0.65);
     margin: auto;
     transform: translate(0,10%);
+    backdrop-filter: blur(100%);
     width: 450px;
     height: 650px;
-    background-blend-mode:hue;
     border-radius: 50px;
     text-align: center;
-
 }
 .boxlogin {
     font-size: 40px;
@@ -59,7 +58,6 @@ body {
     padding-bottom: 5px;
 }
 #email{
-
     width: 50%;
     height: 45px;
     outline:0;
@@ -97,10 +95,8 @@ body {
     padding-bottom: 10px;
     font-size: 15px;
     font-family: BIGLOGIN;
-    
 }
 #password{
-
     width: 50%;
     height: 45px;
     outline:0;
@@ -160,27 +156,58 @@ body {
     position: relative;
 }
 #loginbutton{
-    text-align: center;
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     height:45px;
-    padding-bottom: 5px;
     width: 300px;
     color: white;
     border:none;
-    border-radius: 20px;
-    background: linear-gradient(115deg, rgb(252, 92, 125), rgb(106, 130, 251));
-    font-family: showpass;
+    border-radius: 40px;
+    background-color: black;
+    font-family: monospace;
     font-size: 25px;
 }
-#loginbutton:hover{
+/* loginbuttons old pseudo element before on hover
+#loginbutton:hover::before{
     background-size: 400%;
     animation: loginbutt 2s ease-out 1;
 }
+*/
+#loginbutton:hover::before,#loginbutton:hover::after{
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 47px;
+    padding: 7px; 
+    cursor: pointer; 
+    background-image: conic-gradient(from var(--angle), #662D8C , #ED1E79 , #662D8C);
+    z-index: -1;
+    animation: rotate 5s linear infinite;
+}
+#loginbutton:hover::after{
+    padding: 20px;
+    filter: blur(1rem);
+}
+/* Old login animation
 @keyframes loginbutt{
     0%{
         background-position: 269%;
     }
     100%{
         background-position: 400%;
+    }
+} 
+*/
+/* new login animation */
+@keyframes rotate {
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
     }
 }
 .signupscript{
@@ -285,4 +312,9 @@ body {
     syntax: "<percentage>";
     inherits: false;
     initial-value: 0%;
+}
+@property --angle{
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
 }

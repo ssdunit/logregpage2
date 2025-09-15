@@ -309,6 +309,8 @@ body {
     padding-top: 30px;
     margin: 0;
 }
+
+/* OLD REGISTER BUTTON
 #register{
     text-align: center;
     height:45px;
@@ -332,5 +334,47 @@ body {
     }
     100%{
         background-position: 400%;
+    }
+}
+*/
+
+/* new register button */
+#register{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height:45px;
+    width: 300px;
+    color: white;
+    border:none;
+    border-radius: 40px;
+    background-color: black;
+    font-family: monospace;
+    font-size: 25px;
+}
+#register:hover::before,#register:hover::after{
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 47px;
+    padding: 7px; 
+    cursor: pointer; 
+    background-image: conic-gradient(from var(--angle), #662D8C , #ED1E79 , #662D8C);
+    z-index: -1;
+    animation: rotate 5s linear infinite;
+}
+#register:hover::after{
+    padding: 20px;
+    filter: blur(1rem);
+}
+/* new register button animation */
+@keyframes rotate {
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
     }
 }
