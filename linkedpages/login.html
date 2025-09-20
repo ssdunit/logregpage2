@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="css\loginstyle.css">
-        <script src="javascript/loginscript.js" defer></script>
-    </head>
-    <body>
-        <div class="box">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css\loginstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <script src="javascript/loginscript.js" defer></script>
+</head>
+<body>
+    <div class="box">
             <div class="boxlogin">Login</div>
-            <div class="email">Username</div>
-            <input type="text" id="email" placeholder="Type your username">
-            <br>
+            <div class="email"><div id="user">Username</div>
+            <input type="text" id="email" placeholder="Type your username"></div>
             <div id="erroruser"><img src = "../linkedpages/images/alert.png" class = "error">Please input a valid username</div>
-            <div class="password">Password</div>
-            <input type="password" id="password" placeholder="Type your password" maxlength="8">
-            <br>
+            <div class="password"><div id = "pass">Password</div>
+            <input type="password" id="password" placeholder="Type your password" maxlength="8"></div>
             <div id="errorpass"><img src = "../linkedpages/images/alert.png" class = "error">Please input a valid password</div>
             <div class="showpassword"><!-- checkbox <input type="checkbox" id="showpassword"> --> <img src = "../linkedpages/images/show.png" id="showhide" onclick="shp()">Show password</div>
             <div class="forgetpassword"><a href="https://youtu.be/xvFZjo5PgG0?si=5mliQp2yG7SDUKtc" id="forgotpass">Forgot Password?</a></div>
@@ -30,6 +34,6 @@
             <br><br><div class="regemail">
                 <img src="../images/R.png" id="emphoto">
                <a href="../linkedpages/registration.html" id="regemailanchor"> <button id="register">register now with email</button></a><div>
-        </div>
-    </body>
+    </div>
+</body>
 </html>
