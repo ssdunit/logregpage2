@@ -1,5 +1,7 @@
 Building a website template with login register functionalities and already made homepage(Tweakable)
 
+Main goal: To design a website that provides users with simple and dynamic templates to design your own websites
+
 Future Plans for this project: 
 1. Implimenting MongoDB for all the stored data of users
 2. adding an admin user for easy access to all the webpages
